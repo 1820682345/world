@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>gyx</title>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/gyx.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/snowfall.jquery.min.js"></script>
+		<script src="js/rem.js"></script>
+		<style type="text/css">
+			button{
+				-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+				-webkit-user-select: none;
+				-moz-user-focus: none;
+				-moz-user-select: none
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<!--音乐-->
+			<img src="img/music.png" class="music"/>
+			<!--滑动-->
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<!--第一屏-->
+					<div class="swiper-slide slide1">
+						<div class="hw_bg">
+							<img src="img/hw_bg.png" class="hw_img"/>
+							<span id="show"></span>
+						</div>
+					</div>
+					<!--第二屏-->
+					<div class="swiper-slide slide2">
+						<!--页面打印文字-->
+						<!--样板-->
+						<div id="source" style="display: none;">
+						    <div>第一次向你要微信的时候心情超级紧张(//▽//)</div>
+						    <div>成功要到后兴奋的一晚没睡着o(〃’▽’〃)o</div>
+						    <div>之后和你交流发现你三观超正的(๑•̀ㅂ•́)و✧</div>
+						    <div>可是我很少和女孩子交流，不会哄女孩子(,,•́ . •̀,,)</div>
+						    <div>但是这不是理由，在日后的相处中我会努力改变的(ง •̀_•́)ง</div>
+						</div>
+						<!--实例化-->
+						<div id="output"></div>
+					</div>
+					<!--第三屏-->
+					<div class="swiper-slide slide3">
+						<div class="wrap-3D">
+							<div class="slide3_txt">
+								以前都不知道jk这类服饰，但是看你穿过后就难以忘怀，怎么可以这么好看！有时候都在想这是仙女穿的衣服么，我每个月发了工资都给你买一套好不好
+							</div>
+							<!--3D旋转-->
+							<div class="swiper-3D">
+							    <div class="swiper-wrapper">
+						            <div class="swiper-slide" style="background-image:url(img/jk1.jpg)"></div>
+						            <div class="swiper-slide" style="background-image:url(img/jk2.jpg)"></div>
+						            <div class="swiper-slide" style="background-image:url(img/jk3.jpg)"></div>
+						            <div class="swiper-slide" style="background-image:url(img/jk4.jpg)"></div>
+						            <div class="swiper-slide" style="background-image:url(img/jk5.jpg)"></div>
+							    </div>
+							</div>
+						</div>
+					</div>
+				
+					<!--第四屏-->
+					<div class="swiper-slide slide4">
+						<canvas id="pinkboard"></canvas>
+						<div class="meaning">雨萱：雨中的忘忧草,愿你永远无忧。</div>
+					</div>
+					<!--第五屏-->
+					<div class="swiper-slide slide5">
+						<div class="grid__item theme-1" style="display: none;">
+							<button class="action"><svg class="icon icon--rewind"><use xlink:href="#icon-rewind"></use></svg></button>
+							<button class="particles-button">Send</button>
+						</div>
+						<a href='javascript:void(0)' id='goToBack'>
+							<div class="grid__item theme-2">
+								<button class="action"><svg class="icon icon--rewind"><use xlink:href="#icon-rewind"></use></svg></button>
+								<button class="particles-button">烟花</button>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!--背景-->
+			<div id='content'>
+		        <!-- 飘花 -->
+		        <div id="snowflake"></div>
+		    </div>
+			<!--底部进度条-->
+			<div class="bottom_plan">
+				<div class="plan"></div>
+			</div>
+			<audio class="audio"  loop="loop" autoplay="autoplay">
+				<source src="img/gyx.mp3" type="audio/mpeg">			
+			</audio>
+		</div>
+		
+	</body>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/ax.js"></script>
+	<script src="js/anime.min.js"></script>
+	<script src="js/particles.js"></script>
+	<script src="js/demo.js"></script>
+	<script src="js/jquery.transit.js"></script>
+	<script src="js/gyx.js"></script>
+	<script>
+		//点击延迟切换页面
+		$("#goToBack").click(function(){
+			setTimeout(function(){
+				window.open("yh.html");
+			},3000)
+		});
+	</script>
+</html>

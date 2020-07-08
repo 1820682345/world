@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-3.3.1.min.js"></script>
+	</head>
+	<body>
+		<!--<a href="#" onClick="delayURL('http://www.baidu.com/',3000)">点击到百度</a>-->
+		<a href='javascript:void(0)'id='goToBack'>管理</a>
+	</body>
+	<script type="text/javascript">
+//		 function delayURL(url,time){
+//		 setTimeout("top.location.href = '" + url + "'",time);
+//		 }
+
+$("#goToBack").click(function(){
+	setTimeout(function(){
+		window.open("http://www.baidu.com/","target");
+	},3000)
+        
+});
+</script>
+</html>

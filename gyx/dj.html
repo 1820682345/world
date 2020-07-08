@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<button id="target" onclick="test()">test</button>  
+	</body>
+	<script type="text/javascript">
+		function load(){  
+		    //下面两种方法效果是一样的  
+		    document.getElementById("target").onclick();  
+		    document.getElementById("target").click();  
+		}  
+  
+function test(){  
+    alert("test");  
+}  
+	</script>
+</html>
